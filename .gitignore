@@ -1,3 +1,22 @@
+# Eclipse Setting Files 
+/main/.classpath
+/sub/.classpath
+/main/.launch
+/sub/.classpath
+/main/.project
+/sub/.project
+/main/.settings
+/sub/.settings
+/main/.springBeans
+/sub/.springBeans
+/main/.metadata
+/sub/.metadata
+
+
+
+
+
+
 ############################
 # .gitignore for Grails ####
 ############################
