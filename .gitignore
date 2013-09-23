@@ -12,7 +12,17 @@
 /main/.metadata
 /sub/.metadata
 
-
+# Intellij Setting Files
+/main/*.iws
+/main/*.iml
+/main/*.ipr
+/main/.idea
+/main/projectFilesBackup/*
+/sub/*.iws
+/sub/*.iml
+/sub/*.ipr
+/sub/.idea
+/sub/projectFilesBackup/*
 
 
 
