@@ -70,3 +70,9 @@
 
 # "temporary" build files
 /main/target
+
+
+#############################
+# .gitignore for Maven ######
+# ###########################
+/sub/target
