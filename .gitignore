@@ -1,0 +1,43 @@
+############################
+# .gitignore for Grails ####
+############################
+
+# web application files
+
+# IDE support files
+/main/.classpath
+/main/.launch
+/main/.project
+/main/.settings
+/main/*.launch
+/main/*.tmproj
+/main/ivy*
+/main/*.iws
+/main/*.iml
+/main/*.ipr
+/main/projectFilesBackup/*
+/main/.idea
+
+
+# default HSQL database files for production mode
+/main/prodDb.*
+
+# general HSQL database files
+/main/*Db.properties
+/main/*Db.script
+
+# logs
+/main/stacktrace.log
+/main/test/reports
+/main/logs
+
+# project release file
+/main/*.war
+
+# plugin release file
+/main/*.zip
+
+# older plugin install locations
+
+# "temporary" build files
+/main/target
