@@ -14,9 +14,6 @@
            http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd">
 
 
-    <context:component-scan base-package="net.withmate.withmate">
-        <context:exclude-filter expression="org.springframework.stereotype.Controller" type="annotation"/>
-    </context:component-scan>
 
 
     <!--&lt;!&ndash; Message Source &ndash;&gt;-->
