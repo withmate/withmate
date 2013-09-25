@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.2//EN" "http://www.puppycrawl.com/dtds/configuration_1_2.dtd">
+
+<!-- commons math customization of default Checkstyle behavior -->
+<module name="Checker">
+
+    <!-- 파일 2000라인 -->
+    <module name="FileLength" />
+
+    <module name="TreeWalker">
+
+        <!-- Naming Rule-->
+        <module name="ConstantName"/>
+        <module name="LocalFinalVariableName"/>
+        <module name="LocalVariableName"/>
+        <module name="MemberName"/>
+        <module name="MethodName"/>
+        <module name="PackageName"/>
+        <module name="ParameterName"/>
+        <module name="StaticVariableName"/>
+        <module name="TypeName"/>
+
+        <!-- 메소드 150 라인 -->
+        <module name="MethodLength" />
+
+        <!-- 라인당 글자수 120글자 -->
+        <module name="LineLength">
+            <property name="max" value="120"/>
+            <property name="tabWidth" value="4"/>
+        </module>
+
+        <!-- 파라미터 개수 7개 -->
+        <module name="ParameterNumber" />
+
+        <!-- *로 import하는 구문 -->
+        <module name="AvoidStarImport"/>
+        <!-- 반복되는 import -->
+        <module name="RedundantImport"/>
+        <!-- 사용되지 않는 import -->
+        <module name="UnusedImports"/>
+
+        <!-- {} 아무런 구문이 없는 경우 -->
+        <module name="EmptyBlock" />
+        <!-- 왼쪽 { -->
+        <module name="LeftCurly"/>
+        <!-- 오른쪽 } -->
+        <module name="RightCurly"/>
+
+        <!-- 삼항연산 가능하도록 -->
+        <module name="AvoidInlineConditionals">
+            <property name="severity" value="ignore"/>
+        </module>
+        <!-- Equals, hashCode 오버라이딩 여부 -->
+        <module name="EqualsHashCode"/>
+        <!-- 내부에서 변수값 할당 -->
+        <module name="InnerAssignment"/>
+        <!-- switch 문에서는 반드시 default가 존재 -->
+        <module name="MissingSwitchDefault"/>
+        <!-- 필요없는 catch -->
+        <module name="RedundantThrows" />
+        <!-- if 조건문 간략화 -->
+        <module name="SimplifyBooleanExpression" />
+        <!-- if 리턴문 간략화 -->
+        <module name="SimplifyBooleanReturn" />
+        <!-- 상수의 경우 반드시 static final 로 지정하는 여부 무시하도록 계산식에서 상수역할이 아닌 단순 숫자가 계산될 경우 불편함-->
+        <module name="MagicNumber">
+            <property name="severity" value="ignore"/>
+        </module>
+        <!-- Spring에서 사용시 오류 발생 -->
+        <module name="DesignForExtension">
+            <property name="severity" value="ignore"/>
+        </module>
+
+        <!-- naonsoft coding convention 에서 참조 -->
+        <!-- private 생성자만 가진 클래스는 final로 선언. -->
+        <module name="FinalClass"/>
+        <!-- Utility 클래스는 생성자를 private로 지정하여 생성자가 보이지 않게 해야함. -->
+        <module name="HideUtilityClassConstructor"/>
+        <!-- Implements Bloch, Effective Java, Item 17 - Use Interfaces only to define types. -->
+        <module name="InterfaceIsType"/>
+        <!-- 클래스 memeber는 static final인 경우만 public으로 선언가능함. -->
+        <module name="VisibilityModifier"/>
+        <!-- 200l -> 200L -->
+        <module name="UpperEll"/>
+
+    </module>
+</module>

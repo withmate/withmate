@@ -294,6 +294,16 @@
 
 
 	</dependencies>
+
+
+    <reporting>
+        <plugins>
+
+        </plugins>
+
+    </reporting>
+
+
 	<build>
 		<plugins>
 			<plugin>
@@ -350,6 +360,21 @@
                     </dependency>
                 </dependencies>
             </plugin>
+
+            <!-- checkstyle -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>2.9.1</version>
+                <configuration>
+                    <includeTestSourceDirectory>true</includeTestSourceDirectory>
+                    <configLocation>
+                        src/main/resources/checkstyle.xml
+                    </configLocation>
+                </configuration>
+            </plugin>
+
+
         </plugins>
 	</build>
 
