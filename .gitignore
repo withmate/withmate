@@ -76,3 +76,7 @@
 # .gitignore for Maven ######
 # ###########################
 /sub/target
+
+# osx
+.DS_Store
+
