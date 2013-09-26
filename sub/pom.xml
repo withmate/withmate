@@ -346,9 +346,9 @@
                 <artifactId>db-migration-maven-plugin</artifactId>
                 <version>0.9.9-m5</version>
                 <configuration>
-                    <url>jdbc:mysql://127.0.0.1/booktravel</url>
-                    <username>booktravel</username>
-                    <password>@booktravel!</password>
+                    <url>jdbc:mysql://127.0.0.1/withmate</url>
+                    <username>withmate</username>
+                    <password>@withmate!</password>
                 </configuration>
                 <dependencies>
                     <dependency>
@@ -358,6 +358,7 @@
                     </dependency>
                 </dependencies>
             </plugin>
+
             <!-- checkstyle -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
