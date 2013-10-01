@@ -1,7 +1,7 @@
-package net.withmate.withmate.sample.repository;
+package io.withmate.sample.repository;
 
+import io.withmate.sample.domain.Sample;
 import junit.framework.Assert;
-import net.withmate.withmate.sample.domain.Sample;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +16,6 @@ public class SampleDaoTest {
 
     @Autowired
     private SampleDao sampleDao;
-
 
     @Test
     public void save(){

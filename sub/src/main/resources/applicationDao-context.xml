@@ -49,7 +49,7 @@
 
 
     <!-- SPRING - JPA -->
-    <jpa:repositories base-package="net.withmate.withmate.*.repository" />
+    <jpa:repositories base-package="io.withmate.*.repository" />
 
     <bean id="jpaDialect" class ="org.springframework.orm.jpa.vendor.HibernateJpaDialect" />
 

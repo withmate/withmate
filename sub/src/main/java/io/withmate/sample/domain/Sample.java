@@ -1,4 +1,4 @@
-package net.withmate.withmate.sample.domain;
+package io.withmate.sample.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

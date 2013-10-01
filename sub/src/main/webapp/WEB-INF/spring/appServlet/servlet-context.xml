@@ -31,7 +31,7 @@
         <beans:property name="definitions" value="/WEB-INF/tiles/tiles-*.xml" />
     </beans:bean>
 
-	<context:component-scan base-package="net.withmate.withmate">
+	<context:component-scan base-package="io.withmate">
         <context:include-filter expression="org.springframework.stereotype.Controller" type="annotation"/>
     </context:component-scan>
 	
