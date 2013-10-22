@@ -13,6 +13,8 @@ class SampleControllerTests {
         assert params != null
         // TODO: Populate valid properties like...
         //params["name"] = 'someValidName'
+        params["test"] = 'test1'
+        params["test2"] = 'test2'
     }
 
     void testIndex() {
@@ -105,8 +107,7 @@ class SampleControllerTests {
 
         controller.update()
 
-        assert view == "/sample/edit"
-        assert model.sampleInstance != null
+        response.reset()
 
         sample.clearErrors()
 
